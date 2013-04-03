@@ -1,0 +1,19 @@
+
+.sequence_definer_list  { list-style-type: none; margin: 0; padding: 0; max-width: 100px !important; 
+height:20px;display:block; }
+
+.sequence_definer_list li { padding: 1px; float: left; width: 20px; height: 30px; 
+font-size: 10px; text-align: center; }
+
+.sequence_definer_x
+{
+	float:right;
+	margin-top: -7px;	
+}
+
+.sequence_definer_list .num_val
+{
+	margin-top: -15px;
+	display: block;
+	margin-left: 6px;
+}
