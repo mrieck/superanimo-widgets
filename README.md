@@ -1,5 +1,8 @@
 #JQuery SuperAnimo Widgets/Plugins
 
+For a demo see:
+http://www.markrieck.com/demo/widgets/
+
 ##TargetMarker
 
 Drag a target to select the percentX and percentY.  Depends on JQuery UI Draggable.
