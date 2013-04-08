@@ -110,7 +110,7 @@
 				<div class="widget_container">
 					<h3>Alpha Selector</h3>			
 					<br>	
-					<div id="interpolator_test"></div>
+					<div id="alpha_select_test" style="margin-left:140px;"></div>
 				</div>						
 			</div>					
 			<div class="span3">
@@ -118,19 +118,6 @@
 		</div>		
 		
 	</div>
-</div>
-<br><br><br><br><br><br><br>
-<br><br><br>
-
-<div id="footer">  
-	<div class="row-fluid"> 
-		<div class="offset1 span11"> 
-			<div style="margin-top:10px;margin-bottom:10px;"> 
-				Note: These are all JQuery plugins.  Some depend on JQuery UI.  The UI theme used is Black-Tie.
-			</div> 
-	  	</div> 
-	</div>		 
-</div>
 	<script>
 	$(function() 
 	{
@@ -142,7 +129,7 @@
 			var x = percents.percentX;
 			var y = percents.percentY;
 			
-			//below just makes the demo look better... instead of constantly
+			//below is here just to make the demo look better... instead of constantly
 			//printing new values it just does it after .5 sec
 			if(delayTimer != null)
 			{
@@ -186,10 +173,22 @@
 			alertify.error("New Pixel Size: " + Math.floor(theSize));		
 		});		
 		
+		/***********  BRUSH SELECTOR ***************/		
+		$('#brush_select_test').BrushSelector(function(theSize)
+		{
+			alertify.error("New Brush Size: " + Math.floor(theSize));		
+		});			
+		
+		/***********  ALPHA SELECTOR ***************/		
+		$('#alpha_select_test').AlphaSelector(function(thePercent)
+		{
+			alertify.error("New Alpha Percent: " + thePercent);		
+		});			
+		
 	});
 	</script>	
 	
-
+</div>
 </body>
 </html>
 	
